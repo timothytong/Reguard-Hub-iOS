@@ -29,7 +29,7 @@ struct EventDetailsPage: View {
                 Text("Capture data unavailable.")
             }
             Spacer()
-            Text("Timestamp: \(date)")
+            Text("Timestamp: \(date)").padding()
         }
     }
 }
