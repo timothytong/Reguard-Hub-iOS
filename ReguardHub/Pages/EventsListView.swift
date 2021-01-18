@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct EventsList: View {
+struct EventsListView: View {
     @ObservedObject var eventFetcher: EventFetcher
     
     var body: some View {
         List(eventFetcher.events) { event in
-            NavigationLink(destination: EventDetailsPage(event: event)) {
+            NavigationLink(destination: EventDetailsPageView(event: event)) {
                 GuardianEventRow(event: event)
             }
         }
@@ -21,6 +21,6 @@ struct EventsList: View {
 
 struct EventsList_Previews: PreviewProvider {
     static var previews: some View {
-        EventsList(eventFetcher: EventFetcher())
+        EventsListView(eventFetcher: EventFetcher())
     }
 }

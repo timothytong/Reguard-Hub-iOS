@@ -21,7 +21,7 @@ struct RefreshableEventsScrollView: UIViewRepresentable {
         scrollView.refreshControl = UIRefreshControl()
         scrollView.refreshControl?.addTarget(context.coordinator, action: #selector(Coordinator.handleRefreshControl(sender:)), for: .valueChanged)
         
-        let refreshVC = UIHostingController(rootView: EventsList(eventFetcher: eventFetcher))
+        let refreshVC = UIHostingController(rootView: EventsListView(eventFetcher: eventFetcher))
         refreshVC.view.frame = frame
         scrollView.addSubview(refreshVC.view)
         

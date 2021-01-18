@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DevicesList: View {
+struct DevicesListView: View {
     @ObservedObject var deviceFetcher: DeviceFetcher
     
     var body: some View {
@@ -21,6 +21,6 @@ let deviceData = [device, device, device]
 
 struct DeviceStatusesList_Previews: PreviewProvider {
     static var previews: some View {
-        DevicesList(deviceFetcher: DeviceFetcher())
+        DevicesListView(deviceFetcher: DeviceFetcher())
     }
 }

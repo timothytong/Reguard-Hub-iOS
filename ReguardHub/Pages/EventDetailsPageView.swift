@@ -8,7 +8,7 @@
 import SwiftUI
 import AVKit
 
-struct EventDetailsPage: View {
+struct EventDetailsPageView: View {
     private let formatter: RelativeDateTimeFormatter = {
         let formatter = RelativeDateTimeFormatter()
         formatter.unitsStyle = .full
@@ -39,8 +39,8 @@ private let eventNoUrl = Event(deviceId: UUID().uuidString, eventTimestamp: "1",
 struct EventDetailsPage_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            EventDetailsPage(event: event)
-            EventDetailsPage(event: eventNoUrl)
+            EventDetailsPageView(event: event)
+            EventDetailsPageView(event: eventNoUrl)
         }
     }
 }

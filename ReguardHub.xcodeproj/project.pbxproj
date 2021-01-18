@@ -14,17 +14,18 @@
 		33359A8625A2CE3500197B69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33359A8525A2CE3500197B69 /* Preview Assets.xcassets */; };
 		33359A9125A2CE3600197B69 /* ReguardHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33359A9025A2CE3600197B69 /* ReguardHubTests.swift */; };
 		33359A9C25A2CE3600197B69 /* ReguardHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33359A9B25A2CE3600197B69 /* ReguardHubUITests.swift */; };
+		333680C025B5443000FBF7F9 /* ActivateGuardiansPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333680BF25B5443000FBF7F9 /* ActivateGuardiansPageView.swift */; };
 		3396997D25B181DB002740F4 /* DeviceStatusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396997C25B181DB002740F4 /* DeviceStatusRow.swift */; };
 		3396998625B1821F002740F4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396998525B1821F002740F4 /* Device.swift */; };
-		3396998F25B2209E002740F4 /* DevicesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396998E25B2209E002740F4 /* DevicesList.swift */; };
+		3396998F25B2209E002740F4 /* DevicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396998E25B2209E002740F4 /* DevicesListView.swift */; };
 		3396999E25B29BE8002740F4 /* DeviceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396999D25B29BE8002740F4 /* DeviceFetcher.swift */; };
 		33E0607125B376D1005D41A0 /* NoNavUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0607025B376D1005D41A0 /* NoNavUIHostingController.swift */; };
 		33E0607C25B4EC1A005D41A0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0607B25B4EC1A005D41A0 /* Event.swift */; };
 		33E0608125B4EC94005D41A0 /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0608025B4EC94005D41A0 /* EventFetcher.swift */; };
 		33E0608625B4ECDB005D41A0 /* GuardianEventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0608525B4ECDB005D41A0 /* GuardianEventRow.swift */; };
 		33E0608E25B4F40D005D41A0 /* RefreshableEventsScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0608D25B4F40D005D41A0 /* RefreshableEventsScrollView.swift */; };
-		33E0609325B4F459005D41A0 /* EventsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0609225B4F459005D41A0 /* EventsList.swift */; };
-		33E0609B25B4FA9F005D41A0 /* EventDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0609A25B4FA9F005D41A0 /* EventDetailsPage.swift */; };
+		33E0609325B4F459005D41A0 /* EventsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0609225B4F459005D41A0 /* EventsListView.swift */; };
+		33E0609B25B4FA9F005D41A0 /* EventDetailsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0609A25B4FA9F005D41A0 /* EventDetailsPageView.swift */; };
 		33E060A025B5075B005D41A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0609F25B5075B005D41A0 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,17 +60,18 @@
 		33359A9725A2CE3600197B69 /* ReguardHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReguardHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33359A9B25A2CE3600197B69 /* ReguardHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReguardHubUITests.swift; sourceTree = "<group>"; };
 		33359A9D25A2CE3600197B69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		333680BF25B5443000FBF7F9 /* ActivateGuardiansPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateGuardiansPageView.swift; sourceTree = "<group>"; };
 		3396997C25B181DB002740F4 /* DeviceStatusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusRow.swift; sourceTree = "<group>"; };
 		3396998525B1821F002740F4 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		3396998E25B2209E002740F4 /* DevicesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesList.swift; sourceTree = "<group>"; };
+		3396998E25B2209E002740F4 /* DevicesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListView.swift; sourceTree = "<group>"; };
 		3396999D25B29BE8002740F4 /* DeviceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceFetcher.swift; sourceTree = "<group>"; };
 		33E0607025B376D1005D41A0 /* NoNavUIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNavUIHostingController.swift; sourceTree = "<group>"; };
 		33E0607B25B4EC1A005D41A0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		33E0608025B4EC94005D41A0 /* EventFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFetcher.swift; sourceTree = "<group>"; };
 		33E0608525B4ECDB005D41A0 /* GuardianEventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianEventRow.swift; sourceTree = "<group>"; };
 		33E0608D25B4F40D005D41A0 /* RefreshableEventsScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableEventsScrollView.swift; sourceTree = "<group>"; };
-		33E0609225B4F459005D41A0 /* EventsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsList.swift; sourceTree = "<group>"; };
-		33E0609A25B4FA9F005D41A0 /* EventDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsPage.swift; sourceTree = "<group>"; };
+		33E0609225B4F459005D41A0 /* EventsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListView.swift; sourceTree = "<group>"; };
+		33E0609A25B4FA9F005D41A0 /* EventDetailsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsPageView.swift; sourceTree = "<group>"; };
 		33E0609F25B5075B005D41A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,9 +178,10 @@
 		3396997B25B181B8002740F4 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
-				3396998E25B2209E002740F4 /* DevicesList.swift */,
-				33E0609225B4F459005D41A0 /* EventsList.swift */,
-				33E0609A25B4FA9F005D41A0 /* EventDetailsPage.swift */,
+				3396998E25B2209E002740F4 /* DevicesListView.swift */,
+				33E0609225B4F459005D41A0 /* EventsListView.swift */,
+				33E0609A25B4FA9F005D41A0 /* EventDetailsPageView.swift */,
+				333680BF25B5443000FBF7F9 /* ActivateGuardiansPageView.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -330,16 +333,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333680C025B5443000FBF7F9 /* ActivateGuardiansPageView.swift in Sources */,
 				33359A8125A2CE3300197B69 /* ContentView.swift in Sources */,
 				33E0607C25B4EC1A005D41A0 /* Event.swift in Sources */,
 				33E0608E25B4F40D005D41A0 /* RefreshableEventsScrollView.swift in Sources */,
 				3324791025B50E5100330F99 /* AppDelegate.swift in Sources */,
-				33E0609325B4F459005D41A0 /* EventsList.swift in Sources */,
-				33E0609B25B4FA9F005D41A0 /* EventDetailsPage.swift in Sources */,
+				33E0609325B4F459005D41A0 /* EventsListView.swift in Sources */,
+				33E0609B25B4FA9F005D41A0 /* EventDetailsPageView.swift in Sources */,
 				33E060A025B5075B005D41A0 /* SceneDelegate.swift in Sources */,
 				33E0607125B376D1005D41A0 /* NoNavUIHostingController.swift in Sources */,
 				3396997D25B181DB002740F4 /* DeviceStatusRow.swift in Sources */,
-				3396998F25B2209E002740F4 /* DevicesList.swift in Sources */,
+				3396998F25B2209E002740F4 /* DevicesListView.swift in Sources */,
 				3396998625B1821F002740F4 /* Device.swift in Sources */,
 				3396999E25B29BE8002740F4 /* DeviceFetcher.swift in Sources */,
 				33E0608625B4ECDB005D41A0 /* GuardianEventRow.swift in Sources */,

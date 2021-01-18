@@ -21,7 +21,7 @@ struct RefreshableDevicesScrollView: UIViewRepresentable {
         scrollView.refreshControl = UIRefreshControl()
         scrollView.refreshControl?.addTarget(context.coordinator, action: #selector(Coordinator.handleRefreshControl(sender:)), for: .valueChanged)
         
-        let refreshVC = UIHostingController(rootView: DevicesList(deviceFetcher: deviceFetcher))
+        let refreshVC = UIHostingController(rootView: DevicesListView(deviceFetcher: deviceFetcher))
         refreshVC.view.frame = frame
         scrollView.addSubview(refreshVC.view)
         

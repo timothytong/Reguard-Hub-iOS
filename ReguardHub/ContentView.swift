@@ -30,7 +30,7 @@ struct ContentView: View {
                     }
                     .tag(ReguardHubTab.Devices)
                     
-                    EventsList(eventFetcher: EventFetcher())
+                    EventsListView(eventFetcher: EventFetcher())
                         /*
                          GeometryReader { geometry in
                          RefreshableEventsScrollView(width: geometry.size.width, height: geometry.size.height)
