@@ -24,7 +24,6 @@ struct GuardianEventRow: View {
                 let date = Date(timeIntervalSince1970: TimeInterval(Int(event.eventTimestamp)! / 1000))
                 Text(formatter.string(from: date))
                 
-                
                 Spacer()
                 if event.videoUrl != nil {
                     Image(systemName: "video")

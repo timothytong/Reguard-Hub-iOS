@@ -11,9 +11,13 @@ private struct ReguardHubTab {
     static let Events = "Events"
 }
 
+private struct ReguardHubHomeButton {
+    static let ActivateGuardians = "Activate Guardians"
+}
+
 struct ContentView: View {
-    
     @State var currentTab = ReguardHubTab.Devices
+    @State var btnSelection: String? = nil
     
     var body: some View {
         NavigationView {
@@ -25,7 +29,7 @@ struct ContentView: View {
                     .tabItem {
                         VStack {
                             Image(systemName: "laptopcomputer.and.iphone")
-                            Text("Devices")
+                            Text("Guardians")
                         }.onTapGesture { self.currentTab = ReguardHubTab.Devices }
                     }
                     .tag(ReguardHubTab.Devices)
@@ -50,21 +54,23 @@ struct ContentView: View {
                     Spacer()
                     HStack {
                         Spacer()
-                        Button(action: {
-                            
-                        }, label: {
-                            Image(systemName: "lock.shield")
-                                .font(.system(.largeTitle))
-                                .frame(width: 77, height: 76)
-                                .foregroundColor(Color.white)
-                                .padding(.bottom, 1)
-                            
-                        })
-                        .background(Color.black)
-                        .cornerRadius(38.5)
-                        .padding()
-                        .shadow(color: Color.gray.opacity(0.3), radius: 3, x: 3, y: 3)
-                        .overlay(Circle().inset(by: 16).stroke(Color.white, lineWidth: 1))
+                        NavigationLink(destination: ActivateGuardiansPageView(), tag: ReguardHubHomeButton.ActivateGuardians, selection: $btnSelection) {
+                            Button(action: {
+                                self.btnSelection = ReguardHubHomeButton.ActivateGuardians
+                            }, label: {
+                                Image(systemName: "lock.shield")
+                                    .font(.system(.largeTitle))
+                                    .frame(width: 77, height: 76)
+                                    .foregroundColor(Color.white)
+                                    .padding(.bottom, 1)
+                            })
+                            .background(Color.black)
+                            .cornerRadius(38.5)
+                            .padding()
+                            .shadow(color: Color.gray.opacity(0.3), radius: 3, x: 3, y: 3)
+                            .overlay(Circle().inset(by: 16).stroke(Color.white, lineWidth: 1))
+                        }
+                        .isDetailLink(false)
                         Spacer()
                     }
                 }

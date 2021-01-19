@@ -12,7 +12,7 @@ import Foundation
 struct RefreshableDevicesScrollView: UIViewRepresentable {
     var width: CGFloat
     var height: CGFloat
-    let deviceFetcher = DeviceFetcher()
+    @EnvironmentObject var deviceFetcher: DeviceFetcher
     
     func makeUIView(context: Context) -> UIView {
         let frame = CGRect(x: 0, y: 0, width: width, height: height)
@@ -21,7 +21,7 @@ struct RefreshableDevicesScrollView: UIViewRepresentable {
         scrollView.refreshControl = UIRefreshControl()
         scrollView.refreshControl?.addTarget(context.coordinator, action: #selector(Coordinator.handleRefreshControl(sender:)), for: .valueChanged)
         
-        let refreshVC = UIHostingController(rootView: DevicesListView(deviceFetcher: deviceFetcher))
+        let refreshVC = UIHostingController(rootView: DevicesListView())
         refreshVC.view.frame = frame
         scrollView.addSubview(refreshVC.view)
         

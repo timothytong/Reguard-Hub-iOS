@@ -28,6 +28,7 @@ public class DeviceFetcher: ObservableObject {
             
             let devices = try! JSONDecoder().decode(DeviceList.self, from: data)
             DispatchQueue.main.async {
+                print("Setting self devices to \(devices.devices)")
                 self.devices = devices.devices
             }
         }.resume()

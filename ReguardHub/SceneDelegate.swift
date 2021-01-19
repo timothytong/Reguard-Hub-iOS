@@ -11,9 +11,11 @@ import SwiftUI
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var contentView: ContentView?
+    var appState: AppState?
+    let deviceFetcher = DeviceFetcher()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        print("SCENE FUCK")
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
@@ -21,8 +23,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use a UIHostingController as window root view controller
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: ContentView())
+            self.contentView = ContentView()
+            self.appState = AppState()
             self.window = window
+            reloadHome()
+        }
+    }
+    
+    func reloadHome() {
+        if let window = self.window {
+            window.rootViewController = UIHostingController(
+                rootView: contentView.environmentObject(appState!).environmentObject(deviceFetcher))
             window.makeKeyAndVisible()
         }
     }

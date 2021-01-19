@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DevicesListView: View {
-    @ObservedObject var deviceFetcher: DeviceFetcher
+    @EnvironmentObject var deviceFetcher: DeviceFetcher
     
     var body: some View {
         List(deviceFetcher.devices) { device in
@@ -17,10 +17,10 @@ struct DevicesListView: View {
     }
 }
 
-let deviceData = [device, device, device]
+let deviceData = [guardingDevice, guardingDevice, guardingDevice]
 
 struct DeviceStatusesList_Previews: PreviewProvider {
     static var previews: some View {
-        DevicesListView(deviceFetcher: DeviceFetcher())
+        DevicesListView().environmentObject(DeviceFetcher())
     }
 }
