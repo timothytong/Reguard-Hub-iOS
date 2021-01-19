@@ -51,7 +51,7 @@ struct ActivateGuardiansPageView: View {
         ZStack {
             List(guardianManager.devices) { device in
                 DeviceStatusRow(device: device, isOnCheckList: true, onStatusChange: updateGuardianControlChange(device:isChecked:))
-            }.navigationTitle("Guardians")
+            }.navigationTitle("Activate")
             if (!guardianControlChange.devicesToArm.isEmpty || !guardianControlChange.devicesToDisarm.isEmpty) {
                 VStack {
                     Spacer()
