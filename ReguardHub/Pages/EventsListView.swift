@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct EventsListView: View {
-    @ObservedObject var eventFetcher: EventFetcher
+    @EnvironmentObject var eventFetcher: EventFetcher
     
     var body: some View {
         List(eventFetcher.events) { event in
@@ -21,6 +21,6 @@ struct EventsListView: View {
 
 struct EventsList_Previews: PreviewProvider {
     static var previews: some View {
-        EventsListView(eventFetcher: EventFetcher())
+        EventsListView().environmentObject(EventFetcher())
     }
 }

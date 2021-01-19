@@ -12,7 +12,7 @@ import Foundation
 struct RefreshableEventsScrollView: UIViewRepresentable {
     var width: CGFloat
     var height: CGFloat
-    let eventFetcher = EventFetcher()
+    @EnvironmentObject var eventFetcher: EventFetcher
     
     func makeUIView(context: Context) -> UIView {
         let frame = CGRect(x: 0, y: 0, width: width, height: height)
@@ -21,7 +21,7 @@ struct RefreshableEventsScrollView: UIViewRepresentable {
         scrollView.refreshControl = UIRefreshControl()
         scrollView.refreshControl?.addTarget(context.coordinator, action: #selector(Coordinator.handleRefreshControl(sender:)), for: .valueChanged)
         
-        let refreshVC = UIHostingController(rootView: EventsListView(eventFetcher: eventFetcher))
+        let refreshVC = UIHostingController(rootView: EventsListView())
         refreshVC.view.frame = frame
         scrollView.addSubview(refreshVC.view)
         

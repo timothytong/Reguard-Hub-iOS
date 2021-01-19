@@ -12,7 +12,7 @@ import Foundation
 struct RefreshableDevicesScrollView: UIViewRepresentable {
     var width: CGFloat
     var height: CGFloat
-    @EnvironmentObject var deviceFetcher: DeviceFetcher
+    @EnvironmentObject var deviceFetcher: GuardianManager
     
     func makeUIView(context: Context) -> UIView {
         let frame = CGRect(x: 0, y: 0, width: width, height: height)
@@ -38,9 +38,9 @@ struct RefreshableDevicesScrollView: UIViewRepresentable {
     
     class Coordinator: NSObject {
         var refreshScrollView: RefreshableDevicesScrollView
-        var deviceFetcher: DeviceFetcher
+        var deviceFetcher: GuardianManager
         
-        init(_ refreshScrollView: RefreshableDevicesScrollView, deviceFetcher: DeviceFetcher) {
+        init(_ refreshScrollView: RefreshableDevicesScrollView, deviceFetcher: GuardianManager) {
             self.refreshScrollView = refreshScrollView
             self.deviceFetcher = deviceFetcher
         }

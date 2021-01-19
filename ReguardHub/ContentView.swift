@@ -7,7 +7,7 @@
 
 import SwiftUI
 private struct ReguardHubTab {
-    static let Devices = "Your Devices"
+    static let Devices = "Guardians"
     static let Events = "Events"
 }
 
@@ -34,7 +34,7 @@ struct ContentView: View {
                     }
                     .tag(ReguardHubTab.Devices)
                     
-                    EventsListView(eventFetcher: EventFetcher())
+                    EventsListView()
                         /*
                          GeometryReader { geometry in
                          RefreshableEventsScrollView(width: geometry.size.width, height: geometry.size.height)
