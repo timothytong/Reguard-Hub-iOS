@@ -50,6 +50,7 @@ struct ContentView: View {
                         .tag(ReguardHubTab.Events)
                 }.navigationTitle(currentTab)
                 
+                
                 VStack {
                     Spacer()
                     HStack {
@@ -81,9 +82,11 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        let deviceFetcher = GuardianManager()
+        let eventFetcher = EventFetcher()
         Group {
             ContentView(currentTab: ReguardHubTab.Devices)
             ContentView(currentTab: ReguardHubTab.Events)
-        }
+        }.environmentObject(deviceFetcher).environmentObject(eventFetcher)
     }
 }

@@ -8,6 +8,11 @@
 import Foundation
 public class EventFetcher: ObservableObject {
     @Published var events = [Event]()
+    #if DEBUG
+    private let urlRoot = "http://localhost:3000"
+    #else
+    private let urlRoot = "http://reguard-backend.eba-fb3wmizg.us-east-1.elasticbeanstalk.com"
+    #endif
     
     init() {
         getUserEvents()
@@ -15,7 +20,7 @@ public class EventFetcher: ObservableObject {
     
     func getUserEvents() {
         print("Loading user events..")
-        guard let url = URL(string: "http://reguard-backend.eba-fb3wmizg.us-east-1.elasticbeanstalk.com/api/v1/user/events") else { return }
+        guard let url = URL(string: "\(urlRoot)/api/v1/user/events") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let err = error {

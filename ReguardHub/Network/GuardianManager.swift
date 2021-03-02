@@ -6,8 +6,15 @@
 //
 
 import Foundation
+import UIKit
 
-fileprivate struct SessionChangeRequestModel: Codable {
+fileprivate struct StartSessionRequestModel: Codable {
+    var userId: String
+    var deviceIds: [String]
+    var initiatedByDeviceId: String
+}
+
+fileprivate struct EndSessionRequestModel: Codable {
     var userId: String
     var deviceIds: [String]
 }
@@ -15,6 +22,11 @@ fileprivate struct SessionChangeRequestModel: Codable {
 public class GuardianManager: ObservableObject {
     @Published var devices = [Device]()
     private let encoder = JSONEncoder()
+    #if DEBUG
+    private let urlRoot = "http://localhost:3000"
+    #else
+    private let urlRoot = "http://reguard-backend.eba-fb3wmizg.us-east-1.elasticbeanstalk.com"
+    #endif
     
     init() {
         getUserDevices()
@@ -22,7 +34,7 @@ public class GuardianManager: ObservableObject {
     
     func getUserDevices() {
         print("Loading user devices..")
-        guard let url = URL(string: "http://reguard-backend.eba-fb3wmizg.us-east-1.elasticbeanstalk.com/api/v1/user/devices") else { return }
+        guard let url = URL(string: "\(urlRoot)/api/v1/user/devices") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let err = error {
@@ -45,12 +57,12 @@ public class GuardianManager: ObservableObject {
         if (deviceIds.isEmpty) {
             return
         }
-        guard let url = URL(string: "http://reguard-backend.eba-fb3wmizg.us-east-1.elasticbeanstalk.com/api/v1/session/start") else { return }
+        guard let url = URL(string: "\(urlRoot)/api/v1/session/start") else { return }
         // guard let url = URL(string: "http://localhost:3000/api/v1/session/start") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        let parameters = SessionChangeRequestModel(userId: userId, deviceIds: deviceIds)
+        let parameters = StartSessionRequestModel(userId: userId, deviceIds: deviceIds, initiatedByDeviceId: UIDevice.current.identifierForVendor!.uuidString)
         do {
             let data = try encoder.encode(parameters)
             request.httpBody = data
@@ -64,12 +76,12 @@ public class GuardianManager: ObservableObject {
         if (deviceIds.isEmpty) {
             return
         }
-        guard let url = URL(string: "http://reguard-backend.eba-fb3wmizg.us-east-1.elasticbeanstalk.com/api/v1/session/end") else { return }
+        guard let url = URL(string: "\(urlRoot)/api/v1/session/end") else { return }
         // guard let url = URL(string: "http://localhost:3000/api/v1/session/end") else { return }
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        let parameters = SessionChangeRequestModel(userId: userId, deviceIds: deviceIds)
+        let parameters = EndSessionRequestModel(userId: userId, deviceIds: deviceIds)
         do {
             let data = try encoder.encode(parameters)
             request.httpBody = data
