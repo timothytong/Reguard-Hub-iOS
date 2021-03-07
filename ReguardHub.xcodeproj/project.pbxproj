@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,10 +17,20 @@
 		333680C025B5443000FBF7F9 /* ActivateGuardiansPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333680BF25B5443000FBF7F9 /* ActivateGuardiansPageView.swift */; };
 		333680CE25B554C800FBF7F9 /* GuardianControlChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333680CD25B554C800FBF7F9 /* GuardianControlChange.swift */; };
 		333680D625B6990000FBF7F9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333680D525B6990000FBF7F9 /* AppState.swift */; };
+		336FE98325F0C9F000410022 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 337FBEAC25F0C8CB009E39BA /* amplifyconfiguration.json */; };
+		336FE98425F0C9F000410022 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 337FBEAB25F0C8CB009E39BA /* awsconfiguration.json */; };
+		336FE98525F0C9F000410022 /* amplifytools.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AED175A7F4DF4024B304589F /* amplifytools.xcconfig */; };
 		3396997D25B181DB002740F4 /* DeviceStatusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396997C25B181DB002740F4 /* DeviceStatusRow.swift */; };
 		3396998625B1821F002740F4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396998525B1821F002740F4 /* Device.swift */; };
 		3396998F25B2209E002740F4 /* DevicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396998E25B2209E002740F4 /* DevicesListView.swift */; };
 		3396999E25B29BE8002740F4 /* GuardianManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396999D25B29BE8002740F4 /* GuardianManager.swift */; };
+		33A6357E25F0B97400216D61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33A6357D25F0B97400216D61 /* Main.storyboard */; };
+		33A6358625F0B99D00216D61 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6358325F0B99C00216D61 /* SignupViewController.swift */; };
+		33A6358725F0B99D00216D61 /* ConfirmCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6358425F0B99C00216D61 /* ConfirmCodeViewController.swift */; };
+		33A6358825F0B99D00216D61 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6358525F0B99D00216D61 /* LoginViewController.swift */; };
+		33A6358D25F0B9BC00216D61 /* AuthSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6358C25F0B9BC00216D61 /* AuthSessionManager.swift */; };
+		33A6359225F0BA9500216D61 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6359125F0BA9500216D61 /* UIViewControllerExtension.swift */; };
+		33A6359725F0BAB500216D61 /* OneTimeCodeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A6359625F0BAB500216D61 /* OneTimeCodeTextField.swift */; };
 		33E0607125B376D1005D41A0 /* NoNavUIHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0607025B376D1005D41A0 /* NoNavUIHostingController.swift */; };
 		33E0607C25B4EC1A005D41A0 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0607B25B4EC1A005D41A0 /* Event.swift */; };
 		33E0608125B4EC94005D41A0 /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0608025B4EC94005D41A0 /* EventFetcher.swift */; };
@@ -29,6 +39,9 @@
 		33E0609325B4F459005D41A0 /* EventsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0609225B4F459005D41A0 /* EventsListView.swift */; };
 		33E0609B25B4FA9F005D41A0 /* EventDetailsPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0609A25B4FA9F005D41A0 /* EventDetailsPageView.swift */; };
 		33E060A025B5075B005D41A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E0609F25B5075B005D41A0 /* SceneDelegate.swift */; };
+		74DD0771613131964897A380 /* Pods_ReguardHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82A26F8F0C4754AD104DB5C /* Pods_ReguardHub.framework */; };
+		99674C8B1EBDFA8A2214A37B /* Pods_ReguardHub_ReguardHubUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7EDDF9162EF5521D67192D /* Pods_ReguardHub_ReguardHubUITests.framework */; };
+		A68909A4E75C69C81181F462 /* Pods_ReguardHubTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EC9EC2C8FA25033BBA85A6 /* Pods_ReguardHubTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1156629ECE5C3E6F9DD5CE41 /* Pods-ReguardHubTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReguardHubTests.debug.xcconfig"; path = "Target Support Files/Pods-ReguardHubTests/Pods-ReguardHubTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3324790F25B50E5100330F99 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		332E456625B2AE2200172111 /* RefreshableDevicesScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableDevicesScrollView.swift; sourceTree = "<group>"; };
 		33359A7B25A2CE3300197B69 /* ReguardHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReguardHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,10 +79,19 @@
 		333680BF25B5443000FBF7F9 /* ActivateGuardiansPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateGuardiansPageView.swift; sourceTree = "<group>"; };
 		333680CD25B554C800FBF7F9 /* GuardianControlChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianControlChange.swift; sourceTree = "<group>"; };
 		333680D525B6990000FBF7F9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		337FBEAB25F0C8CB009E39BA /* awsconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
+		337FBEAC25F0C8CB009E39BA /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		3396997C25B181DB002740F4 /* DeviceStatusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusRow.swift; sourceTree = "<group>"; };
 		3396998525B1821F002740F4 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		3396998E25B2209E002740F4 /* DevicesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesListView.swift; sourceTree = "<group>"; };
 		3396999D25B29BE8002740F4 /* GuardianManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianManager.swift; sourceTree = "<group>"; };
+		33A6357D25F0B97400216D61 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		33A6358325F0B99C00216D61 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		33A6358425F0B99C00216D61 /* ConfirmCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmCodeViewController.swift; sourceTree = "<group>"; };
+		33A6358525F0B99D00216D61 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		33A6358C25F0B9BC00216D61 /* AuthSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthSessionManager.swift; sourceTree = "<group>"; };
+		33A6359125F0BA9500216D61 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		33A6359625F0BAB500216D61 /* OneTimeCodeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneTimeCodeTextField.swift; sourceTree = "<group>"; };
 		33E0607025B376D1005D41A0 /* NoNavUIHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNavUIHostingController.swift; sourceTree = "<group>"; };
 		33E0607B25B4EC1A005D41A0 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		33E0608025B4EC94005D41A0 /* EventFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventFetcher.swift; sourceTree = "<group>"; };
@@ -77,6 +100,15 @@
 		33E0609225B4F459005D41A0 /* EventsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListView.swift; sourceTree = "<group>"; };
 		33E0609A25B4FA9F005D41A0 /* EventDetailsPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsPageView.swift; sourceTree = "<group>"; };
 		33E0609F25B5075B005D41A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49ED7525BB46B9E50A609ABC /* Pods-ReguardHub-ReguardHubUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReguardHub-ReguardHubUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReguardHub-ReguardHubUITests/Pods-ReguardHub-ReguardHubUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7355F744659521A1CC404A75 /* Pods-ReguardHub-ReguardHubUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReguardHub-ReguardHubUITests.release.xcconfig"; path = "Target Support Files/Pods-ReguardHub-ReguardHubUITests/Pods-ReguardHub-ReguardHubUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8939193148CB860912123A37 /* Pods-ReguardHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReguardHub.release.xcconfig"; path = "Target Support Files/Pods-ReguardHub/Pods-ReguardHub.release.xcconfig"; sourceTree = "<group>"; };
+		896A111025D868EFC0F233D1 /* Pods-ReguardHubTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReguardHubTests.release.xcconfig"; path = "Target Support Files/Pods-ReguardHubTests/Pods-ReguardHubTests.release.xcconfig"; sourceTree = "<group>"; };
+		93B356A03604CB1B96BB212F /* Pods-ReguardHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReguardHub.debug.xcconfig"; path = "Target Support Files/Pods-ReguardHub/Pods-ReguardHub.debug.xcconfig"; sourceTree = "<group>"; };
+		AED175A7F4DF4024B304589F /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		B82A26F8F0C4754AD104DB5C /* Pods_ReguardHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReguardHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2EC9EC2C8FA25033BBA85A6 /* Pods_ReguardHubTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReguardHubTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD7EDDF9162EF5521D67192D /* Pods_ReguardHub_ReguardHubUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReguardHub_ReguardHubUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DD0771613131964897A380 /* Pods_ReguardHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68909A4E75C69C81181F462 /* Pods_ReguardHubTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99674C8B1EBDFA8A2214A37B /* Pods_ReguardHub_ReguardHubUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +142,7 @@
 		331DA45B25B154F400FAFCF6 /* Supporting Views */ = {
 			isa = PBXGroup;
 			children = (
+				33A6359625F0BAB500216D61 /* OneTimeCodeTextField.swift */,
 				3396997C25B181DB002740F4 /* DeviceStatusRow.swift */,
 				33E0608525B4ECDB005D41A0 /* GuardianEventRow.swift */,
 				332E456625B2AE2200172111 /* RefreshableDevicesScrollView.swift */,
@@ -118,10 +154,13 @@
 		33359A7225A2CE3300197B69 = {
 			isa = PBXGroup;
 			children = (
+				646F2A219B1B44C7BAA89974 /* AmplifyConfig */,
 				33359A7D25A2CE3300197B69 /* ReguardHub */,
 				33359A8F25A2CE3600197B69 /* ReguardHubTests */,
 				33359A9A25A2CE3600197B69 /* ReguardHubUITests */,
 				33359A7C25A2CE3300197B69 /* Products */,
+				9C9F3ADBB76B0AE14F8C8009 /* Pods */,
+				6544EEB5D541965328F85D57 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +177,9 @@
 		33359A7D25A2CE3300197B69 /* ReguardHub */ = {
 			isa = PBXGroup;
 			children = (
+				33A6359125F0BA9500216D61 /* UIViewControllerExtension.swift */,
+				33A6358225F0B98B00216D61 /* ViewControllers */,
+				33A6357D25F0B97400216D61 /* Main.storyboard */,
 				333680D525B6990000FBF7F9 /* AppState.swift */,
 				3324790F25B50E5100330F99 /* AppDelegate.swift */,
 				33E0609F25B5075B005D41A0 /* SceneDelegate.swift */,
@@ -204,10 +246,55 @@
 		339699A625B2A02C002740F4 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				33A6358C25F0B9BC00216D61 /* AuthSessionManager.swift */,
 				3396999D25B29BE8002740F4 /* GuardianManager.swift */,
 				33E0608025B4EC94005D41A0 /* EventFetcher.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		33A6358225F0B98B00216D61 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33A6358425F0B99C00216D61 /* ConfirmCodeViewController.swift */,
+				33A6358525F0B99D00216D61 /* LoginViewController.swift */,
+				33A6358325F0B99C00216D61 /* SignupViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		646F2A219B1B44C7BAA89974 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				337FBEAC25F0C8CB009E39BA /* amplifyconfiguration.json */,
+				337FBEAB25F0C8CB009E39BA /* awsconfiguration.json */,
+				AED175A7F4DF4024B304589F /* amplifytools.xcconfig */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		6544EEB5D541965328F85D57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B82A26F8F0C4754AD104DB5C /* Pods_ReguardHub.framework */,
+				CD7EDDF9162EF5521D67192D /* Pods_ReguardHub_ReguardHubUITests.framework */,
+				C2EC9EC2C8FA25033BBA85A6 /* Pods_ReguardHubTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C9F3ADBB76B0AE14F8C8009 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93B356A03604CB1B96BB212F /* Pods-ReguardHub.debug.xcconfig */,
+				8939193148CB860912123A37 /* Pods-ReguardHub.release.xcconfig */,
+				49ED7525BB46B9E50A609ABC /* Pods-ReguardHub-ReguardHubUITests.debug.xcconfig */,
+				7355F744659521A1CC404A75 /* Pods-ReguardHub-ReguardHubUITests.release.xcconfig */,
+				1156629ECE5C3E6F9DD5CE41 /* Pods-ReguardHubTests.debug.xcconfig */,
+				896A111025D868EFC0F233D1 /* Pods-ReguardHubTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,9 +304,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33359AA025A2CE3600197B69 /* Build configuration list for PBXNativeTarget "ReguardHub" */;
 			buildPhases = (
+				E479E32BA7BC15AB223343BD /* [CP] Check Pods Manifest.lock */,
 				33359A7725A2CE3300197B69 /* Sources */,
 				33359A7825A2CE3300197B69 /* Frameworks */,
 				33359A7925A2CE3300197B69 /* Resources */,
+				459706DFF104B84FF28A45E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33359AA325A2CE3600197B69 /* Build configuration list for PBXNativeTarget "ReguardHubTests" */;
 			buildPhases = (
+				F9C79B756DAFB4BE4584C0D0 /* [CP] Check Pods Manifest.lock */,
 				33359A8825A2CE3600197B69 /* Sources */,
 				33359A8925A2CE3600197B69 /* Frameworks */,
 				33359A8A25A2CE3600197B69 /* Resources */,
@@ -252,9 +342,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33359AA625A2CE3600197B69 /* Build configuration list for PBXNativeTarget "ReguardHubUITests" */;
 			buildPhases = (
+				F2755B01C30C192AB677BE80 /* [CP] Check Pods Manifest.lock */,
 				33359A9325A2CE3600197B69 /* Sources */,
 				33359A9425A2CE3600197B69 /* Frameworks */,
 				33359A9525A2CE3600197B69 /* Resources */,
+				A5C504917F84BA6B22E43E36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -313,7 +405,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336FE98325F0C9F000410022 /* amplifyconfiguration.json in Resources */,
+				336FE98425F0C9F000410022 /* awsconfiguration.json in Resources */,
+				336FE98525F0C9F000410022 /* amplifytools.xcconfig in Resources */,
 				33359A8625A2CE3500197B69 /* Preview Assets.xcassets in Resources */,
+				33A6357E25F0B97400216D61 /* Main.storyboard in Resources */,
 				33359A8325A2CE3500197B69 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,19 +430,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		459706DFF104B84FF28A45E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReguardHub/Pods-ReguardHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReguardHub/Pods-ReguardHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReguardHub/Pods-ReguardHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5C504917F84BA6B22E43E36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReguardHub-ReguardHubUITests/Pods-ReguardHub-ReguardHubUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReguardHub-ReguardHubUITests/Pods-ReguardHub-ReguardHubUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReguardHub-ReguardHubUITests/Pods-ReguardHub-ReguardHubUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E479E32BA7BC15AB223343BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReguardHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2755B01C30C192AB677BE80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReguardHub-ReguardHubUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C79B756DAFB4BE4584C0D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReguardHubTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		33359A7725A2CE3300197B69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A6358825F0B99D00216D61 /* LoginViewController.swift in Sources */,
 				333680C025B5443000FBF7F9 /* ActivateGuardiansPageView.swift in Sources */,
 				33359A8125A2CE3300197B69 /* ContentView.swift in Sources */,
+				33A6358725F0B99D00216D61 /* ConfirmCodeViewController.swift in Sources */,
 				33E0607C25B4EC1A005D41A0 /* Event.swift in Sources */,
 				333680D625B6990000FBF7F9 /* AppState.swift in Sources */,
 				33E0608E25B4F40D005D41A0 /* RefreshableEventsScrollView.swift in Sources */,
+				33A6359225F0BA9500216D61 /* UIViewControllerExtension.swift in Sources */,
 				3324791025B50E5100330F99 /* AppDelegate.swift in Sources */,
 				33E0609325B4F459005D41A0 /* EventsListView.swift in Sources */,
+				33A6359725F0BAB500216D61 /* OneTimeCodeTextField.swift in Sources */,
 				33E0609B25B4FA9F005D41A0 /* EventDetailsPageView.swift in Sources */,
+				33A6358625F0B99D00216D61 /* SignupViewController.swift in Sources */,
 				33E060A025B5075B005D41A0 /* SceneDelegate.swift in Sources */,
 				33E0607125B376D1005D41A0 /* NoNavUIHostingController.swift in Sources */,
 				3396997D25B181DB002740F4 /* DeviceStatusRow.swift in Sources */,
@@ -356,6 +560,7 @@
 				333680CE25B554C800FBF7F9 /* GuardianControlChange.swift in Sources */,
 				33E0608625B4ECDB005D41A0 /* GuardianEventRow.swift in Sources */,
 				33E0608125B4EC94005D41A0 /* EventFetcher.swift in Sources */,
+				33A6358D25F0B9BC00216D61 /* AuthSessionManager.swift in Sources */,
 				332E456725B2AE2200172111 /* RefreshableDevicesScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +716,7 @@
 		};
 		33359AA125A2CE3600197B69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93B356A03604CB1B96BB212F /* Pods-ReguardHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -533,6 +739,7 @@
 		};
 		33359AA225A2CE3600197B69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8939193148CB860912123A37 /* Pods-ReguardHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -555,6 +762,7 @@
 		};
 		33359AA425A2CE3600197B69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1156629ECE5C3E6F9DD5CE41 /* Pods-ReguardHubTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +784,7 @@
 		};
 		33359AA525A2CE3600197B69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896A111025D868EFC0F233D1 /* Pods-ReguardHubTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -597,6 +806,7 @@
 		};
 		33359AA725A2CE3600197B69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49ED7525BB46B9E50A609ABC /* Pods-ReguardHub-ReguardHubUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -616,6 +826,7 @@
 		};
 		33359AA825A2CE3600197B69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7355F744659521A1CC404A75 /* Pods-ReguardHub-ReguardHubUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

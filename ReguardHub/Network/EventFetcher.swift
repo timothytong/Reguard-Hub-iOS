@@ -20,7 +20,7 @@ public class EventFetcher: ObservableObject {
     
     func getUserEvents() {
         print("Loading user events..")
-        guard let url = URL(string: "\(urlRoot)/api/v1/user/events") else { return }
+        guard let url = URL(string: "\(urlRoot)/api/v1/user/user/events") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let err = error {

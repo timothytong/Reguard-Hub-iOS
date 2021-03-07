@@ -34,7 +34,7 @@ public class GuardianManager: ObservableObject {
     
     func getUserDevices() {
         print("Loading user devices..")
-        guard let url = URL(string: "\(urlRoot)/api/v1/user/devices") else { return }
+        guard let url = URL(string: "\(urlRoot)/api/v1/user/user/devices") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let err = error {

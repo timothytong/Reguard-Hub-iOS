@@ -1,0 +1,6 @@
+framework module Pods_ReguardHub_ReguardHubUITests {
+  umbrella header "Pods-ReguardHub-ReguardHubUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
