@@ -8,6 +8,7 @@ target 'ReguardHub' do
   # Pods for ReguardHub
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+  pod 'TextFieldEffects'
 
   target 'ReguardHubTests' do
     inherit! :search_paths

@@ -21,6 +21,6 @@ let deviceData = [guardingDevice, guardingDevice, guardingDevice]
 
 struct DeviceStatusesList_Previews: PreviewProvider {
     static var previews: some View {
-        DevicesListView().environmentObject(GuardianManager())
+        DevicesListView().environmentObject(GuardianManager.shared)
     }
 }

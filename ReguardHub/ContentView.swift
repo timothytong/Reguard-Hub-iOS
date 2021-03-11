@@ -49,6 +49,21 @@ struct ContentView: View {
                         }
                         .tag(ReguardHubTab.Events)
                 }.navigationTitle(currentTab)
+                .toolbar {
+                    ToolbarItemGroup(placement: .navigationBarTrailing) {
+                        Button("Log Out", action: {
+                            AuthSessionManager.shared.logout {
+                                DispatchQueue.main.async {
+                                    ((UIApplication.shared.connectedScenes.first as! UIWindowScene).delegate as! SceneDelegate).renderRoot()
+                                }
+                            } onError: { err in
+                                
+                            }
+
+                        })
+                         
+                    }
+                }
                 
                 
                 VStack {
@@ -82,7 +97,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let deviceFetcher = GuardianManager()
+        let deviceFetcher = GuardianManager.shared
         let eventFetcher = EventFetcher()
         Group {
             ContentView(currentTab: ReguardHubTab.Devices)

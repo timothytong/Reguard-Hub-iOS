@@ -42,21 +42,10 @@ final class AuthSessionManager {
             print("Amplify found user: \(user)")
             authState = .session(user: user)
             currentUser = user
+            GuardianManager.shared.getUserDevices(userId: user.userId)
             onDone()
         } else {
             currentUser = nil
-        }
-    }
-    
-    func signOut(onDone: @escaping (() -> Void)) {
-        Amplify.Auth.signOut { result in
-            switch result {
-            case .success():
-                print("Signed out")
-                onDone()
-            default:
-                print("Unable to sign out")
-            }
         }
     }
     

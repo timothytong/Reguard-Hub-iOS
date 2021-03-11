@@ -85,6 +85,6 @@ struct ActivateGuardiansPageView: View {
 
 struct ActivateGuardiansView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivateGuardiansPageView().environmentObject(GuardianManager())
+        ActivateGuardiansPageView().environmentObject(GuardianManager.shared)
     }
 }

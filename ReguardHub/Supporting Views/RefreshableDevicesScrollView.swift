@@ -46,7 +46,7 @@ struct RefreshableDevicesScrollView: UIViewRepresentable {
         }
         
         @objc func handleRefreshControl(sender: UIRefreshControl) {
-            self.deviceFetcher.getUserDevices()
+            self.deviceFetcher.getUserDevices(userId: AuthSessionManager.shared.currentUser!.userId)
             sender.endRefreshing()
         }
     }

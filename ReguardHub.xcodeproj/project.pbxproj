@@ -20,6 +20,7 @@
 		336FE98325F0C9F000410022 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 337FBEAC25F0C8CB009E39BA /* amplifyconfiguration.json */; };
 		336FE98425F0C9F000410022 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 337FBEAB25F0C8CB009E39BA /* awsconfiguration.json */; };
 		336FE98525F0C9F000410022 /* amplifytools.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AED175A7F4DF4024B304589F /* amplifytools.xcconfig */; };
+		33720B5F25F481DC00C06A93 /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33720B5E25F481DC00C06A93 /* DesignableUITextField.swift */; };
 		3396997D25B181DB002740F4 /* DeviceStatusRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396997C25B181DB002740F4 /* DeviceStatusRow.swift */; };
 		3396998625B1821F002740F4 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396998525B1821F002740F4 /* Device.swift */; };
 		3396998F25B2209E002740F4 /* DevicesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3396998E25B2209E002740F4 /* DevicesListView.swift */; };
@@ -79,6 +80,7 @@
 		333680BF25B5443000FBF7F9 /* ActivateGuardiansPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateGuardiansPageView.swift; sourceTree = "<group>"; };
 		333680CD25B554C800FBF7F9 /* GuardianControlChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardianControlChange.swift; sourceTree = "<group>"; };
 		333680D525B6990000FBF7F9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		33720B5E25F481DC00C06A93 /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		337FBEAB25F0C8CB009E39BA /* awsconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		337FBEAC25F0C8CB009E39BA /* amplifyconfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = SOURCE_ROOT; };
 		3396997C25B181DB002740F4 /* DeviceStatusRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceStatusRow.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				33E0608525B4ECDB005D41A0 /* GuardianEventRow.swift */,
 				332E456625B2AE2200172111 /* RefreshableDevicesScrollView.swift */,
 				33E0608D25B4F40D005D41A0 /* RefreshableEventsScrollView.swift */,
+				33720B5E25F481DC00C06A93 /* DesignableUITextField.swift */,
 			);
 			path = "Supporting Views";
 			sourceTree = "<group>";
@@ -548,6 +551,7 @@
 				33A6359225F0BA9500216D61 /* UIViewControllerExtension.swift in Sources */,
 				3324791025B50E5100330F99 /* AppDelegate.swift in Sources */,
 				33E0609325B4F459005D41A0 /* EventsListView.swift in Sources */,
+				33720B5F25F481DC00C06A93 /* DesignableUITextField.swift in Sources */,
 				33A6359725F0BAB500216D61 /* OneTimeCodeTextField.swift in Sources */,
 				33E0609B25B4FA9F005D41A0 /* EventDetailsPageView.swift in Sources */,
 				33A6358625F0B99D00216D61 /* SignupViewController.swift in Sources */,

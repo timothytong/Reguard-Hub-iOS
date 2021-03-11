@@ -20,6 +20,8 @@ fileprivate struct EndSessionRequestModel: Codable {
 }
 
 public class GuardianManager: ObservableObject {
+    static let shared = GuardianManager()
+    
     @Published var devices = [Device]()
     private let encoder = JSONEncoder()
     #if DEBUG
@@ -28,13 +30,13 @@ public class GuardianManager: ObservableObject {
     private let urlRoot = "http://reguard-backend.eba-fb3wmizg.us-east-1.elasticbeanstalk.com"
     #endif
     
-    init() {
-        getUserDevices()
+    private init() {
+        
     }
     
-    func getUserDevices() {
-        print("Loading user devices..")
-        guard let url = URL(string: "\(urlRoot)/api/v1/user/user/devices") else { return }
+    func getUserDevices(userId: String) {
+        print("Loading user devices for \(userId)..")
+        guard let url = URL(string: "\(urlRoot)/api/v1/user/\(userId)/devices") else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let err = error {

@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import Amplify
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -14,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var contentView: ContentView?
     var appState: AppState?
     let authSessManager = AuthSessionManager.shared
-    let deviceFetcher = GuardianManager()
+    let deviceFetcher = GuardianManager.shared
     let eventFetcher = EventFetcher()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -40,7 +41,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             switch self.authSessManager.authState {
             case .session(let user):
                 
-                let userId = user.userId
                 guard let deviceId = UIDevice.current.identifierForVendor else {
                     fatalError("Unable to get a device ID!")
                 }

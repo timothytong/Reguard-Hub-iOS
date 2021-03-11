@@ -24,10 +24,12 @@ PODS:
   - AWSPluginsCore (1.5.2):
     - Amplify (= 1.5.2)
     - AWSCore (~> 2.21.0)
+  - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
   - Amplify
   - AmplifyPlugins/AWSCognitoAuthPlugin
+  - TextFieldEffects
 
 SPEC REPOS:
   trunk:
@@ -39,6 +41,7 @@ SPEC REPOS:
     - AWSCore
     - AWSMobileClient
     - AWSPluginsCore
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Amplify: ab6311e55abba45613c3990e8233b5ffa965d556
@@ -49,7 +52,8 @@ SPEC CHECKSUMS:
   AWSCore: 878e7726c80e2b5494b77c9bb5e7a059d10994f0
   AWSMobileClient: cc99c37739440cb3b35e47476a58dd82dd0603bd
   AWSPluginsCore: 58fbe8752faffd4a3d94799d942ebb6f3bf96fe9
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 8d23f42fcfce8a8419a249058998943caba8d828
+PODFILE CHECKSUM: ccb7f3c5e852cbeba1a5fd379b16951e1f072b5d
 
 COCOAPODS: 1.10.0
